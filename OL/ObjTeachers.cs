@@ -1,6 +1,4 @@
-﻿
-using DB;
-using System.Data;
+﻿using DB;
 
 namespace OL
 {
@@ -22,14 +20,8 @@ namespace OL
             {
                 if (_Classes == null)
                 {
-                    DataTable tbl = new SQL().GetDataTable("select * from TblSınıflar where Sınıf_ID=" + this.Sınıf_ID);
-                    ObjClasses objClasses = new ObjClasses();
-                    objClasses.Sınıf_ID = (int)tbl.Rows[0]["Sınıf_ID"];
-                    objClasses.Sınıf_Ad = tbl.Rows[0]["Sınıf_Ad"].ToString();
-                    _Classes = objClasses;
+                    return new SQL().Single<ObjClasses>("select * from TblSınıflar where Sınıf_ID=" + this.Sınıf_ID);
                 }
-
-
                 return _Classes;
             }
         }

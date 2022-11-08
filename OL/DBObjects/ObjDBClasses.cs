@@ -1,5 +1,4 @@
-﻿
-namespace OL.DBObjects
+﻿namespace OL.DBObjects
 {
     public class ObjDBClasses
     {

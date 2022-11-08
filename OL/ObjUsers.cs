@@ -1,7 +1,7 @@
-﻿
-namespace OL
+﻿namespace OL
 {
     public class ObjUsers : DBObjects.ObjDBUsers
     {
+
     }
 }

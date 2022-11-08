@@ -44,7 +44,6 @@ namespace OBS.Wiev
             if (e.KeyCode == Keys.Enter)
             { Entering(); }
         }
-
         private void TXT_Name_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar)

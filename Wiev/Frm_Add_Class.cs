@@ -26,19 +26,16 @@ namespace OBS.Wiev
                 this.Close();
             }
         }
-
         private void Frm_Add_Class_Load(object sender, EventArgs e)
         {
             Style.StyleSheet style = new Style.StyleSheet();
             style.TXTBoxMaxLenght(TXT_Class_Name);
         }
-
         private void TXT_Class_Name_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar)
             && !char.IsSeparator(e.KeyChar);
         }
-
         private void Save_Class_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)

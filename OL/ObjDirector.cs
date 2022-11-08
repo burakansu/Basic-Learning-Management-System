@@ -1,5 +1,4 @@
-﻿
-namespace OL
+﻿namespace OL
 {
     public class ObjDirector : DBObjects.ObjDBDirectors
     {
